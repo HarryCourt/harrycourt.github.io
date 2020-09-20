@@ -3,7 +3,7 @@
 "productName": "DeskRPG",
 "productVersion": "0.1",
 "dataUrl": "RandomRPG.data.unityweb",
-"wasmCodeUrl": "RandomRPG.wasm.code.unityweb",
+"wasmCodeUrl": "RandomRPG.wasm",
 "wasmFrameworkUrl": "RandomRPG.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 2.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
