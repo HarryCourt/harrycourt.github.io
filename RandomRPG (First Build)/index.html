@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            div.heading {
-            text-align: center;
-            }
-
-            div.gamelist {
-            text-align: center;
-            }
-
-            body {background-color: rgb(255, 255, 255);}
-            h1   {color: rgb(0, 0, 0);}
-            p    {color: rgb(0, 0, 0);}
-        </style>
-    </head>
-<body>
-
-    <div class="heading"><h1>Harry's Very Awesome Website</h1>
-        <h3>"<i>I'm built different</i>😼"</h3>
-        <p>Here are some cool games you can try;</p>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | DeskRPG</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/RandomRPG.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">DeskRPG</div>
+      </div>
     </div>
-
-    <div class="gamelist">
-        <h2>Games List</h2>
-        <p><a href="RandomRPG (First Build)/Game.html">RandomRPG (First Build)</a> - Uploaded 21/09/2020, 2:10 AM ACST</p>
-    </div>
-
-</body>
+  </body>
 </html>
